@@ -1,0 +1,15 @@
+<!-- Como se hacía hasta ahora -->
+<app-card>
+  <button [class.active]="selected" (click)="onSelectUser()">
+    <img [src]="userImage" [alt]="userName" />
+    <span>{{ userName }}</span>
+  </button>
+</app-card>
+
+<!-- Con signals -->
+<!-- <div>
+  <button (click)="onSelectUser()">
+    <img [src]="userImage()" [alt]="name()" />
+    <span>{{ name() }}</span>
+  </button>
+</div> -->
