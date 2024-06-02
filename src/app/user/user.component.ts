@@ -127,19 +127,13 @@
 // Con Output function
 import { Component, EventEmitter, Input, Output } from '@angular/core';
 import { UserModel } from '../Models/user.model';
-import { CardComponent } from '../shared/card/card.component';
 
 @Component({
   selector: 'app-user',
-  standalone: true,
-  imports: [CardComponent],
   templateUrl: './user.component.html',
   styleUrl: './user.component.css',
 })
 export class UserComponent {
-  // @Input({ required: true }) id!: string;
-  // @Input({ required: true }) avatar!: string;
-  // @Input({ required: true }) name!: string;
   @Input({ required: true }) user!: UserModel;
   @Input({ required: true }) selected!: boolean;
   @Output() onSelect = new EventEmitter<string>(); // sigue siendo un EventEmitter

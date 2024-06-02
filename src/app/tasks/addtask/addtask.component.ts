@@ -1,12 +1,8 @@
 import { Component, EventEmitter, Input, Output, inject } from '@angular/core';
-import { FormsModule } from '@angular/forms';
-import { TaskData } from '../../Models/task.model';
 import { TasksService } from '../../services/tasks.service';
 
 @Component({
   selector: 'app-addtask',
-  standalone: true,
-  imports: [FormsModule],
   templateUrl: './addtask.component.html',
   styleUrl: './addtask.component.css',
 })
